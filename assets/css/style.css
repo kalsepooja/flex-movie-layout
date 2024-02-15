@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+body{
+    font-family: 'Bitter', serif;
+    background-color: var(--color-white);
+    line-height: 1.5;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ###### CSS FOR HEADER SECTION ###### */
+
+/* .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+			                          rgba(0, 0, 0, 0.6)),
+		                                url('../images/bollywood.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+} */
+.info{
+    flex-grow: 1;
+}
+.info h1{
+    text-transform: uppercase;
+    font-size: 2.625rem;
+    cursor: pointer;
+}
+.info h1 a{
+    color: var(--color-white)
+}
+.info p{
+    font-style: italic;
+    color: var(--primary-dark);
+}
+
+.navbar{
+    background-color: var(--primary-light);
+}
+.navbar ul{
+    text-align: center;
+}
+.navbar ul li a{
+    color: var(--color-white);
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active,
+.navbar ul li a:focus{
+    background-color: var(--primary-light-dark);
+}
+
+/* ####### CSS FOR POST SECTION ######## */
+.main-content{
+     padding: 15px 15px 0px;
+}
+.post{
+    margin-bottom: 20px;
+}
+.post a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+.figure {
+    box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px;
+    cursor: pointer;
+    height: 100%;
+    background-color: var(--color-white);
+}
+.post-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.figcaption h1 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: var(--primary-dark);
+    padding: 10px;
+    color: var(--color-dark);
+    transform: translateY(-7px);
+}
+.figcaption p{
+    padding: 25px;
+    color: var(--color-dark);
+}
+
+/* ######### CSS for watch now section ######## */
+
+.heading{
+    font-size : 3.125rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 30px 30px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+.watchfigure{
+    background-color: var(--color-dark);
+    margin-bottom: 20px;
+    box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px
+}
+.watchimg{
+    height: 650px;
+}
+.watchfigure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.watchcaption{
+    padding: 20px;
+    color: var(--color-white);
+}
+.watchcaption h3{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.watchcaption span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.watchcaption a{
+    color: var(--color-white);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* ############## css for download section ################## */
+
+.download>img{
+    width: 100%;
+}
+.downloadimg{
+    text-align: center;
+}
+.downloadimg a {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+}
+.downloadgenre{
+    padding: 20px;
+    background-color: var(--color-white);
+}
+.genre h4, .cast h4{
+    text-transform: capitalize;
+    width: 52px;
+    font-weight: bold;
+    align-self: center;
+}
+.rating{
+    background-color: var(--primary-dark);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.cast img{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* ############### css for gallery section ############### */
+
+.gallery-img{
+    margin-bottom: 20px;
+    height: 350px;
+}
+.gallery-img a {
+    height: 100%;
+}
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ################# css for sidebar section ############## */
+
+.sidebar{
+    padding: 0px 15px 15px;
+} 
+.side-cards{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-transform: capitalize;
+    box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px;
+}
+.side-cards h3{
+    font-size: 22px;
+}
+.side-cards ul{
+    padding: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-weight: bold;
+}
+.side-cards a{
+    color: var(--color-dark);
+}
+
+/* ############# css for footer section ############# */
+
+.footer {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: var(--primary-dark);
+    color: var(--color-dark);
+    padding: 20px;
+    font-weight: 800;
+}
+
+@media all and (min-width: 469px){
+    .side-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .side-cards{
+        flex-basis: 49%;
+    }
+}
+
+@media all and (min-width: 768px){
+    .post{
+        flex: 0 0 49%;
+    }
+    .posts{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .download-content{
+        display: flex;
+    }
+    .downloadimg{
+        align-self: center;
+    }
+    .downloadimg a {
+        padding: 45px;
+        background-color: var(--primary-dark);
+        color: var(--color-dark);
+    }
+    .downloadgenre {
+        flex: 1 0 0;
+    }
+    .gallery-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+    .gallery-imgs :nth-child(3n + 1){
+        flex-basis: 30%;
+    }
+    .gallery-imgs :nth-child(3n + 2){
+        flex-basis: 500px;
+    }
+    .gallery-imgs :nth-child(3n + 3){
+        flex-basis: 250px;
+    }
+    .gallery-img{
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+}
+
+@media all and (min-width: 1180px){
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        flex-grow: 1;
+    }
+    .content-area{
+        display: flex;
+    }
+    .main-content {
+        flex: 1 0 0;
+    }
+    .post:nth-child(3),.post:nth-child(4),.post:nth-child(5){
+        flex: 0 0 32%;
+    }
+    .post:nth-child(6){
+        flex: 0 0 100%;
+    }
+    .watchfigure{
+        display: flex;
+    }
+    .watchcaption{
+        align-self: center;
+        flex-grow: 1;
+        padding: 40px;
+    }
+    .watchimg{
+        flex : 0 0 500px;
+    }
+   .watchfigure:nth-of-type(2) .watchimg{
+     order: 1;
+   }
+   .gallery-img{
+     height: 500px;
+    }
+    .side-info {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .sidebar{
+        flex : 0 0 400px;
+        padding: 15px;
+    }
+    .side-cards{
+        flex-basis: 100%;
+    }
+    
+}
